@@ -86,9 +86,6 @@ const GlobalStyles = createGlobalStyle`
     font-weight: bold;
     color: var(--red);
   }
-  legend {
-    width: 9%;
-  }
 `;
 
 export default GlobalStyles;

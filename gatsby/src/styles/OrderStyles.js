@@ -28,9 +28,7 @@ const OrderStyles = styled.form`
   .nypon {
     display: none;
   }
-  .order {
-    border: 1px solid red;
-  }
+
   @media (max-width: 900px) {
     fieldset.menu,
     fieldset.order {
