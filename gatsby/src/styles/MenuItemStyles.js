@@ -1,0 +1,42 @@
+import styled from 'styled-components';
+
+const MenuItemStyles = styled.div`
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 0 1.3rem;
+  align-content: center;
+  align-items: center;
+  position: relative;
+  max-height: 100px;
+  .gatsby-image-wrapper {
+    grid-row: span 2;
+    height: 100%;
+  }
+  p {
+    margin: 0;
+  }
+  h2 {
+    font-size: 2.2rem;
+    text-transform: uppercase;
+  }
+  button {
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+  button + button {
+    margin-left: 1rem;
+  }
+  .remove {
+    background: none;
+    color: var(--red);
+    font-size: 3rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    box-shadow: none;
+    line-height: 1rem;
+  }
+`;
+
+export default MenuItemStyles;
