@@ -22,6 +22,9 @@ const ToppingsStyles = styled.div`
     .active {
       background: var(--red);
     }
+    @media (max-width: 700px) {
+      font-size: 1.6rem;
+    }
   }
 `;
 
@@ -34,7 +37,6 @@ function countPizzasInToppings(pizzas) {
       if (existingTopping) {
         existingTopping.count += 1;
       } else {
-
         acc[topping.id] = {
           id: topping.id,
           name: topping.name,

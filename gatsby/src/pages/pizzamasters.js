@@ -53,7 +53,7 @@ export default function PizzaMastersPage({ data, pageContext }) {
       />
       <PizzaMasterGrid>
         {pizzamasters.map((person) => (
-          <PizzaMasterStyles>
+          <PizzaMasterStyles key={person.id}>
             <Link to={`/pizzamaster/${person.slug.current}`}>
               <h2>
                 <span className="mark">{person.name}</span>

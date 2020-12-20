@@ -26,6 +26,7 @@ const NavStyles = styled.nav`
     text-decoration: none;
     text-transform: uppercase;
     padding: 1rem;
+    display: block;
     &:hover {
       color: var(--red);
     }
@@ -34,6 +35,29 @@ const NavStyles = styled.nav`
       background-color: var(--red);
       color: var(--white);
     }
+    @media (max-width: 800px) {
+      font-size: 1.8rem;
+    }
+  }
+  @media (max-width: 700px) {
+    --columns: 4;
+    margin-bottom: 4rem;
+    border-bottom: 2px solid #eee;
+    ul {
+      padding-top: 1rem;
+      margin-top: 1rem;
+      grid-template-rows: auto auto;
+      grid-template-columns: repeat(var(--columns), 1fr);
+    }
+    .main-logo {
+      display: none;
+    }
+    .logo {
+      transform: none;
+    }
+  }
+  @media (max-width: 500px) {
+    --columns: 2;
   }
 `;
 
@@ -51,9 +75,9 @@ export default function Nav() {
             Pizza Menu
           </Link>
         </li>
-        <li>
+        <li className="main-logo">
           <Link to="/">
-            <Logo />
+            <Logo className="main-logo" />
           </Link>
         </li>
         <li>
