@@ -37,7 +37,7 @@ const OrderStyles = styled.form`
   }
   @media (max-width: 450px) {
     h2 {
-      font-size: 1.8rem;
+      font-size: 1.6rem;
     }
     button {
       padding: 0.3rem;
