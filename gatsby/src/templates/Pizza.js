@@ -8,6 +8,9 @@ const PizzaGrid = styled.div`
   display: grid;
   grid-gap: 2rem;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  @media (max-width: 450px) {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
 `;
 
 export default function SimglePizzaPage({ data: { pizza } }) {
