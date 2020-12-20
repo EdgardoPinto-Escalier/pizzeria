@@ -35,6 +35,15 @@ const OrderStyles = styled.form`
       grid-column: span 2;
     }
   }
+  @media (max-width: 450px) {
+    h2 {
+      font-size: 1.8rem;
+    }
+    button {
+      padding: 0.3rem;
+      margin: 0.5rem 0rem 0.5rem 1rem;
+    }
+  }
 `;
 
 export default OrderStyles;
