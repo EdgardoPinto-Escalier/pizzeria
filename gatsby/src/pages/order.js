@@ -112,7 +112,7 @@ export default function OrderPage({ data }) {
           <div aria-live="polite" aria-atomic="true">
             {error ? <p>Error: {error}</p> : ''}
           </div>
-          <button type="submit" disabled={loading}>
+          <button type="submit" disabled={loading} className="back-button">
             <span aria-live="assertive" aria-atomic="true">
               {loading ? 'Placing Order...' : ''}
             </span>

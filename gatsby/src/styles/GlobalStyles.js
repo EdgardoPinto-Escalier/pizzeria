@@ -86,6 +86,17 @@ const GlobalStyles = createGlobalStyle`
     font-weight: bold;
     color: var(--red);
   }
+
+  .back-button {
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: var(--red);
+    color: var(--white);
+    padding: 1rem;
+    font-weight: bold;
+  }
 `;
 
 export default GlobalStyles;

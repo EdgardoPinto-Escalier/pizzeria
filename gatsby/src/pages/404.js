@@ -15,10 +15,6 @@ const FourOFourStyles = styled.div`
     font-weight: bold;
     font-size: 5rem;
   }
-  button {
-    width: 100%;
-    text-align: center;
-  }
 `;
 
 export default function FourOFourPage() {
@@ -26,9 +22,9 @@ export default function FourOFourPage() {
     <FourOFourStyles>
       <p className="status">404</p>
       <p>Ouch! That page doesn't exist...</p>
-      <button Link to="/" type="button">
-        BACK HOME
-      </button>
+      <Link className="back-button" to="/" type="button">
+        back home
+      </Link>
     </FourOFourStyles>
   );
 }
