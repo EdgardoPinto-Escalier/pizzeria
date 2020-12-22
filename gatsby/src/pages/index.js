@@ -3,20 +3,24 @@ import useLatestData from '../utils/useLatestData';
 import { HomePageGrid } from '../styles/Grids';
 import LoadingGrid from '../components/LoadingGrid';
 import ItemGrid from '../components/ItemGrid';
+import SEO from '../components/SEO';
 
 function CurrentPizzaMasters({ pizzamasters }) {
   return (
-    <div>
-      <h2 className="center">
-        <span className="mark tilt">Today's Pizza Masters</span>
-      </h2>
-      <p className="indexp">Ready to make your Pizza!</p>
-      {!pizzamasters && <LoadingGrid count={4} />}
-      {pizzamasters && !pizzamasters?.length && (
-        <p>No Pizza Masters working today...</p>
-      )}
-      {pizzamasters?.length && <ItemGrid items={pizzamasters} />}
-    </div>
+    <>
+      <SEO />
+      <div>
+        <h2 className="center">
+          <span className="mark tilt">Today's Pizza Masters</span>
+        </h2>
+        <p className="indexp">Ready to make your Pizza!</p>
+        {!pizzamasters && <LoadingGrid count={4} />}
+        {pizzamasters && !pizzamasters?.length && (
+          <p>No Pizza Masters working today...</p>
+        )}
+        {pizzamasters?.length && <ItemGrid items={pizzamasters} />}
+      </div>
+    </>
   );
 }
 

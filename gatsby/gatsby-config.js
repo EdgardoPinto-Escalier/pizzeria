@@ -3,6 +3,7 @@ import dotenv from 'dotenv';
 dotenv.config({ path: '.env' });
 
 export default {
+  pathPrefix: '/pizza',
   siteMetadata: {
     title: `Pizzeria`,
     siteUrl: 'https://gatsby-pizzeria.netlify.app',
