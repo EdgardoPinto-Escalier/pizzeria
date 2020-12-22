@@ -138,7 +138,7 @@ export default function OrderPage({ data }) {
         </fieldset>
       </OrderStyles>
     </>
-  )
+  );
 }
 
 export const query = graphql`
