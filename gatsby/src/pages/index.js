@@ -8,7 +8,7 @@ import SEO from '../components/SEO';
 function CurrentPizzaMasters({ pizzamasters }) {
   return (
     <>
-      <SEO />
+      <SEO title="Welcome" />
       <div>
         <h2 className="center">
           <span className="mark tilt">Today's Pizza Masters</span>
