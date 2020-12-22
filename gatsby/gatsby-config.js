@@ -5,7 +5,7 @@ dotenv.config({ path: '.env' });
 export default {
   siteMetadata: {
     title: `Pizzeria`,
-    siteUrl: 'https://pizzeria.com',
+    siteUrl: 'https://gatsby-pizzeria.netlify.app',
     description: 'The best pizza in town!',
   },
   plugins: [
@@ -21,4 +21,4 @@ export default {
       },
     },
   ],
-};
+}
