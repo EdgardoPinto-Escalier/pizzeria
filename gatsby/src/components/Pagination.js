@@ -7,13 +7,13 @@ const PaginationStyles = styled.div`
   align-content: center;
   align-items: center;
   justify-items: center;
-  border: 1px solid var(--grey);
+  border: 1px solid #bfbfbf;
   margin: 2rem 0;
   text-align: center;
   & > * {
     padding: 1rem;
     flex: 1;
-    border-right: 1px solid var(--grey);
+    border-right: 1px solid #bfbfbf;
     text-decoration: none;
     &[aria-current],
     &.current {
@@ -25,7 +25,7 @@ const PaginationStyles = styled.div`
       color: var(--grey);
     }
   }
-`;
+`
 
 export default function Pagination({
   pageSize,

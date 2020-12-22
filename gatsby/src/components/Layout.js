@@ -23,7 +23,7 @@ const SiteBordersStyles = styled.div`
 `;
 
 const ContentStyles = styled.div`
-  background: white;
+  background: var(--grey);
   padding: 2rem;
 `;
 

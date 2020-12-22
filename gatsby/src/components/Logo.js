@@ -7,7 +7,7 @@ const LogoStyles = styled.div`
   width: 20rem;
   height: 20rem;
   margin: 0;
-  background: white url(${pizzalogo});
+  background: var(--grey) url(${pizzalogo});
   display: flex;
   .inner {
     flex: 1;

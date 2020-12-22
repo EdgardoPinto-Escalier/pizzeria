@@ -15,6 +15,7 @@ const GlobalStyles = createGlobalStyle`
 
   body {
     font-size: 2rem;
+    background: var(--grey);
   }
 
   fieldset {
@@ -96,6 +97,10 @@ const GlobalStyles = createGlobalStyle`
     color: var(--white);
     padding: 1rem;
     font-weight: bold;
+  }
+
+  .indexp {
+    margin-bottom: 4rem;
   }
 `;
 

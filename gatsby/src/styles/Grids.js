@@ -24,6 +24,7 @@ export const ItemStyles = styled.div`
   img {
     height: auto;
     font-size: 0;
+    border: 2px solid #bfbfbf;
   }
   p {
     transform: rotate(-2deg) translateY(-10px);
