@@ -1,6 +1,12 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
+import {
+  MdPersonPin,
+  MdLocalPizza,
+  MdShoppingBasket,
+  MdShoppingCart,
+} from 'react-icons/md';
 import SEO from '../components/SEO';
 import useForm from '../utils/useForm';
 import calculatePizzaPrice from '../utils/calculatePizzaPrice';
@@ -37,10 +43,12 @@ export default function OrderPage({ data }) {
 
   return (
     <>
-      <SEO title="Order a Pizza!" />
+      <SEO title="Order Now!" />
       <OrderStyles onSubmit={submitOrder}>
         <fieldset disabled={loading}>
-          <legend>Your Info</legend>
+          <legend>
+            <MdPersonPin className="order-icon" /> Your Info
+          </legend>
           <label htmlFor="name">
             Name
             <input
@@ -71,7 +79,9 @@ export default function OrderPage({ data }) {
           />
         </fieldset>
         <fieldset disabled={loading} className="menu">
-          <legend>Menu</legend>
+          <legend>
+            <MdLocalPizza className="order-icon" /> Menu
+          </legend>
           {pizzas.map((pizza) => (
             <MenuItemStyles key={pizza.id}>
               <Img
@@ -99,7 +109,9 @@ export default function OrderPage({ data }) {
           ))}
         </fieldset>
         <fieldset disabled={loading} className="order">
-          <legend>Order</legend>
+          <legend>
+            <MdShoppingBasket className="order-icon" /> Order
+          </legend>
           <PizzaOrder
             order={order}
             removePizzaFromOrder={removePizzaFromOrder}
@@ -120,12 +132,13 @@ export default function OrderPage({ data }) {
             <span aria-live="assertive" aria-atomic="true">
               {loading ? 'Placing Order...' : ''}
             </span>
+            <MdShoppingCart className="order-icon shop" />{' '}
             {loading ? '' : 'Order Now!'}
           </button>
         </fieldset>
       </OrderStyles>
     </>
-  );
+  )
 }
 
 export const query = graphql`

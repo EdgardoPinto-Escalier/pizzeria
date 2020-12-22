@@ -12,7 +12,7 @@ export default function PizzasPage({ data, pageContext }) {
         title={
           pageContext.topping
             ? `Pizzas with ${pageContext.topping}`
-            : `All Pizzas`
+            : `Pizza Menu`
         }
       />
       <ToppingsFilter activeTopping={pageContext.topping} />

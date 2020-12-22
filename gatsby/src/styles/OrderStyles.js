@@ -10,6 +10,7 @@ const OrderStyles = styled.form`
     grid-column: span 2;
     max-height: 600px;
     overflow: auto;
+    margin-bottom: 1rem;
     label {
       display: grid;
       grid-gap: 1rem;
@@ -24,6 +25,13 @@ const OrderStyles = styled.form`
       align-content: flex-start;
       height: 600px;
     }
+
+    #email {
+      margin-bottom: 1rem;
+    }
+    .pizza-loop {
+      margin-bottom: 1rem;
+    }
   }
   .total {
     margin-top: 2rem;
@@ -34,6 +42,22 @@ const OrderStyles = styled.form`
   }
   .nypon {
     display: none;
+  }
+
+  button {
+    margin-bottom: 2rem;
+  }
+
+  .order-icon {
+    font-size: 2.8rem;
+    vertical-align: middle;
+    margin-bottom: 3px;
+    margin-right: 5px;
+    color: var(--red);
+  }
+
+  .shop {
+    color: var(--white);
   }
 
   @media (max-width: 900px) {

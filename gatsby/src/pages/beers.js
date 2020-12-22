@@ -12,7 +12,7 @@ const BeerStyles = styled.div`
 `;
 
 const SingleBeerStyles = styled.div`
-  border: solid 1px var(--grey);
+  border: solid 1px #bfbfbf;
   padding: 2rem;
   text-align: center;
   h3 {
@@ -24,7 +24,7 @@ const SingleBeerStyles = styled.div`
 export default function BeersPage({ data }) {
   return (
     <>
-      <SEO title={`Beers! We have ${data.beers.nodes.length} in stock!`} />
+      <SEO title="Our Beers" />
       <h2 className="center">
         WE HAVE{' '}
         <span className="beers-available">{data.beers.nodes.length}</span> BEERS
