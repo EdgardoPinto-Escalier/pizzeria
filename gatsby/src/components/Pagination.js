@@ -25,7 +25,7 @@ const PaginationStyles = styled.div`
       color: var(--grey);
     }
   }
-`
+`;
 
 export default function Pagination({
   pageSize,

@@ -17,7 +17,7 @@ function CurrentPizzaMasters({ pizzamasters }) {
       )}
       {pizzamasters?.length && <ItemGrid items={pizzamasters} />}
     </div>
-  )
+  );
 }
 
 function FeaturedPizzas({ hotpizzas }) {
@@ -45,5 +45,5 @@ export default function HomePage() {
         <FeaturedPizzas hotpizzas={hotpizzas} />
       </HomePageGrid>
     </div>
-  )
+  );
 }

@@ -79,6 +79,7 @@ export default function OrderPage({ data }) {
                 height="50"
                 fluid={pizza.image.asset.fluid}
                 alt={pizza.name}
+                className="pizza-order"
               />
               <div>
                 <h2>{pizza.name}</h2>
@@ -106,8 +107,11 @@ export default function OrderPage({ data }) {
           />
         </fieldset>
         <fieldset disabled={loading}>
-          <h3>
-            Your Total is: {formatMoney(calculateTotalOrder(order, pizzas))}
+          <h3 className="total">
+            Your Total is:{' '}
+            <span className="total-span">
+              {formatMoney(calculateTotalOrder(order, pizzas))}
+            </span>
           </h3>
           <div aria-live="polite" aria-atomic="true">
             {error ? <p>Error: {error}</p> : ''}

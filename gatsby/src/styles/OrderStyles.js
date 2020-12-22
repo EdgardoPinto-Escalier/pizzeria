@@ -25,6 +25,13 @@ const OrderStyles = styled.form`
       height: 600px;
     }
   }
+  .total {
+    margin-top: 2rem;
+  }
+  .total-span {
+    font-weight: bold;
+    color: var(--red);
+  }
   .nypon {
     display: none;
   }
